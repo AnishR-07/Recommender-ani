@@ -10,9 +10,11 @@ build-essential \
 curl \
 && rm -rf /var/lib/apt/lists/*
 
-COPY . .
+COPY requirements.txt .
 
-RUN pip install --no-cache-dir -e .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 EXPOSE 8501
 
