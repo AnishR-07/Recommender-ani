@@ -17,7 +17,7 @@ spec:
       containers:
       - name: anime-container 
         image: anime-app:latest
-        imagepullpolicy: IfNotPresent
+        imagePullpolicy: IfNotPresent
         ports:
         - containerPort: 8501
         envFrom:
